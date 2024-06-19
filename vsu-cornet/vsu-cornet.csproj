@@ -12,6 +12,11 @@
     <UserSecretsId>53871756-a47c-49a6-8d5f-af4e737acd15</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="8.0.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Text.Json" Version="8.0.3" />
+  </ItemGroup>
+  <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
     <Content Remove="$(SpaRoot)**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
@@ -40,8 +45,4 @@
       </ResolvedFileToPublish>
     </ItemGroup>
   </Target>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="8.0.6" />
-    <PackageReference Include="System.Text.Json" Version="8.0.3" />
-  </ItemGroup>
 </Project>
