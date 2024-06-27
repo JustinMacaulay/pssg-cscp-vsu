@@ -8,7 +8,7 @@ WORKDIR /app
 # Create build image for runtime
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 COPY . .
-# COPY --from=node /usr/local/bin /usr/local/bin
+
 RUN apt-get update -yq &&  \
   apt-get upgrade -yq &&   \
   apt-get install -yq curl
