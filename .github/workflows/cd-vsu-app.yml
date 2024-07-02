@@ -1,4 +1,4 @@
-name: cd-partner-portal-api
+name: cd-vsu-app
 
 on:
   workflow_dispatch:
