@@ -42,11 +42,11 @@ jobs:
           build-args: |
             BUILD_ID="${{ env.BUILD_ID }}"
           cache-from: |
-            ${{ env.IMAGE_ID }}
+            ${{ env.IMAGE_REGISTRY }}/${{ env.IMAGE_NAME }}
           file: ${{ env.VSU_APP_DOCKERFILE_PATH }}
           push: true
           tags: |
-            ${{ env.IMAGE_NAME }}:dev
+            ${{ env.IMAGE_REGISTRY }}/${{ env.IMAGE_NAME }}:dev
           
 
   # DEVELOPMENT NOTE
